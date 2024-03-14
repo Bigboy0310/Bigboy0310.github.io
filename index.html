@@ -1,7 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Your Construction Firm</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Your Construction Firm</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" role="button">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Your Construction Firm</h2>
+                    <h3>Building Your Dreams Into Reality</h3>
+                </hgroup>
+                <p>We have been the leading construction firm in the city, with over 20 years of experience in turning visions into realities. Our dedicated team works closely with clients to ensure every project is completed to the highest standards.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?construction" alt="Construction Site" />
+                    <figcaption>Our Latest Project - <a href="#" target="_blank">See More</a></figcaption>
+                </figure>
+                <h3>About Us</h3>
+                <p>Founded in 2000, Your Construction Firm has been at the forefront of innovation in the construction industry. Our mission is to provide high-quality construction services that exceed our clients' expectations.</p>
+                <h3>Our Projects</h3>
+                <p>Take a look at some of our recent projects. We specialize in both residential and commercial construction, and we're proud to have contributed to the city's skyline.</p>
+            </section>
+        </div>
+    </main>
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Contact Us</h2>
+                    <h3>Get in touch for your next project</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Your Name" aria-label="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Your Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Send Inquiry</button>
+                </form>
+            </article>
+        </div>
+    </section>
+    <footer class="container">
+        <small>
+            <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a>
+        </small>
+    </footer>
 </body>
 </html>
